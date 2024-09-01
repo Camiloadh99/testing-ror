@@ -25,6 +25,18 @@ Siempre que se crea un modelo con una migracion de bd con el comando anterior es
 rails db:migrate
 ```
 
+### Modelo vista control desde consola
+
+```zsh
+rails g scaffold < Modelo > < Atributos >
+```
+
+Ejemplo: Como gestionar el concepto de libro en la app, esto crea todo el crud, y una vista basica para la creacion,etc
+
+```zsh
+rails g scaffold Book title:string author:string description:text isbn:string pages_count:integer
+```
+
 ### Consola para interactuar con rails
 
 ```zsh

@@ -1,0 +1,9 @@
+---
+es:
+  gobal:
+    pet_name_placeholder: Mi mascota se llama
+  hello: Hola mundo
+  users:
+    first_name: Nombre
+    form:
+      last_name: Apellido

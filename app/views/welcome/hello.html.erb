@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Mi mascota se llama <%= @pet_name%> </h1>
+    <h1><%= I18n.t "gobal.pet_name_placeholder"%> <%= @pet_name%> </h1>
     <h2>Raza: <%= @pet_breed%> </h2> 
     <h2>Credentials <%= @credentials%></h2>
   </body>

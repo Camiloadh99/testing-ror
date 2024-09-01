@@ -1,0 +1,22 @@
+.form-inputs label {
+  display: block;
+}
+
+.form-inputs input,
+.form-inputs textarea {
+  margin-bottom: 10px;
+  min-width: 200px;
+}
+
+.button-form {
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  width: 200px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 10px;
+}
