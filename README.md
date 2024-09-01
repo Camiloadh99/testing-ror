@@ -1,24 +1,53 @@
-# README
+## Comandos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Inicio del servidor
 
-Things you may want to cover:
+```zsh
+rails server
+```
 
-* Ruby version
+### Crear modelo desde terminal
 
-* System dependencies
+```zsh
+rails generate model <ModelName> <atributos>
+```
 
-* Configuration
+#### Ejemplo:
 
-* Database creation
+```zsh
+rails generate model Pet name:string breed:string
+```
 
-* Database initialization
+<br>
+Siempre que se crea un modelo con una migracion de bd con el comando anterior es necesario hacer la migracion
 
-* How to run the test suite
+```zsh
+rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Consola para interactuar con rails
 
-* Deployment instructions
+```zsh
+rails console
+```
 
-* ...
+<br>
+por ejemplo si quiero crear algo dentro de mi base de datos de pet creada anterior mente puedo entrar a la consola y correr:
+
+```zsh
+Pet.create name:"Lulu", breed: "poodle"
+```
+
+## Credenciales
+
+Rails maneja sus propias credenciales en un archivo encriptado en config/credencials.yml.enc, para editarlo toca usar:
+
+```zsh
+EDITOR=nano rails credentials:edit
+```
+
+Si quiero ver la info al momento de guardar voy a la consola de rails y escribo
+
+```zsh
+Rails.application.credentials.<variable>
+```
